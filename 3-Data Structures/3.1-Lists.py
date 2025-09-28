@@ -135,8 +135,8 @@ for index,nam in enumerate(names):
 
 # 💕💕 List Comprehension with function calls💕💕
 
-words=["hello","world","python","list","comprehension"]
+# words=["hello","world","python","list","comprehension"]
 
-lengths=[len(word) for word in words]
+# lengths=[len(word) for word in words]
 
-print(lengths)
+# print(lengths)

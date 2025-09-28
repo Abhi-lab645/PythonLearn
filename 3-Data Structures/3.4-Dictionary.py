@@ -180,3 +180,112 @@ for value in student5.values():
 for key,value in student5.items():
     print(f"{key}:{value}")
 
+# 😎😎 Nested Dictionaries😎😎
+
+students={
+    "s1":{
+        "name":"Abhinav",
+        "age":20,
+        "birth_year":2005
+    },
+    "s2":{
+        "name":"Apish",
+        "age":18,
+        "birth_year":2007
+    },
+    "s3":{
+        "name":"Shivam",
+        "age":19,
+        "birth_year":2006
+
+    }
+}
+
+# for key,value in students.items():
+#     print(key,value)
+
+# for key1 in students.keys():
+#     for key,value in students[key1].items():
+#         print(f"{key}:{value}")
+
+
+# 😎😎 Access nested dictionaries elements 😎😎
+
+print(students["s3"]["name"])
+
+# 😎😎 Iterating over nested Dictionaries 😎😎
+
+for student_id,student_info in students.items():
+    print(f"{student_id}:{student_info}")
+
+    for key,value in student_info.items():
+        print(f"{key}:{value}")
+
+# 😎😎 Dictionary Comprehension 😎😎
+
+# sqr={}
+
+# for i in range(1,6):
+#     x=i**2
+#     sqr[i]=x
+
+# print(sqr)
+
+
+squares={x:x**2 for x in range(1,6)}
+
+print(squares)
+
+
+# 😎😎 Conditional dictionary Comprehension 😎😎
+
+evens={x:x**2 for x in range(1,11) if x%2==0}
+
+print(evens)
+
+# 😎😎 Practical Examples 😎😎
+
+# 😎😎 Use a dictionary to count the frequency of elements in list 😎😎
+
+"""
+numbers=[1,2,3,1,3,2,1,4,5,2,3,4]
+
+num_set=set(numbers)
+
+freq_dict={}
+
+for i in num_set:
+    count=0
+    for j in numbers:
+        
+        if i==j:
+            count+=1
+            
+            freq_dict[i]=count
+
+print(freq_dict)
+
+"""
+
+number_lst=[1,2,2,2,3,3,3,3,4,4,4]
+
+frequency={}
+
+for num in number_lst:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+
+print(frequency)
+
+# 😎😎 Merge 2 dictionaries into one 😎😎
+
+dict1={"a":1,"b":1}
+
+dict2={"b":3,"c":4}
+
+merged_dict={**dict1,**dict2}
+
+print(merged_dict)
+
