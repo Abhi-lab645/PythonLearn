@@ -75,9 +75,19 @@ people=[
     {'name':'Krishav','age':19}
 ]
 
-
-
-
 people_name=list(map(get_name,people))
 
 print(people_name)
+
+
+# 😎😎 😎😎       CONCLUSION                😎😎 😎😎
+
+"""
+The map() function is a powerful tool for 
+applying transformations to iterable data
+structures.It can be used with regular functions,
+lambda functions, and even multiple iterables,
+providing a versatile approach to data processing
+in python.By understanding and utilizing map(),
+you can write more efficient and readable code.
+"""
